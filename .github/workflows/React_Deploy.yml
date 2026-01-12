@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build and Deploy
+    name: Build page
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -17,9 +17,28 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '22'
-      # Need to check permissions for gh-pages deployment within action
-      # - name: Install Dependencies
-      #   run: sudo apt update && sudo apt install npm && npm install
-      # - name: Gh_pages Deploy
-      #   run: npm run deploy
+      - name: Install Dependencies
+        run: sudo apt update && sudo apt install npm && npm install
+      - name: Build react
+        run: npm run build
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Get gh-pages branch
+        run: ls
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
