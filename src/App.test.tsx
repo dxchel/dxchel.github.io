@@ -90,6 +90,6 @@ test('Check Contact', () => {
   expect(phone).toAppearAfter(mail);
   const message: HTMLElement = screen.getByPlaceholderText("Message");
   expect(message).toAppearAfter(phone);
-  const submit: HTMLElement = screen.getByText("Mail");
+  const submit: HTMLElement = screen.getByText("Go to mail");
   expect(submit).toAppearAfter(message);
 });

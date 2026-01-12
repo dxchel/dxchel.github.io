@@ -47,7 +47,7 @@ export const Contact = (): React.ReactElement => {
                                 </Col>
                                 <Col>
                                 <textarea rows={6} value={formDetails.message} placeholder="Message" onChange={(e) => setFormDetails({ ...formDetails, message: e.target.value })}/>
-                                    <button type="submit"><span>Mail</span></button>
+                                    <button type="submit"><span>Go to mail</span></button>
                                 </Col>
                             </Row>
                         </form>
