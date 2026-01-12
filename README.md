@@ -6,7 +6,7 @@ This portfolio was done using the tutorial from [Judygab](https://github.com/jud
 
 Uses cookies only to welcome *back* recurring users.
 
-Added github actions for main branch protection, all tests must pass before merging to main, it also deploys the page into gh_pages on main push.
+Added github actions for main branch protection, all tests must pass before merging to main, it will also deploy the page into gh_pages on main push in the future.
 
 ## 🧬 Project Structure
 

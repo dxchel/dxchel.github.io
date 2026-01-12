@@ -17,12 +17,9 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '22'
-      - name: Install Dependencies
-        run: sudo apt update && sudo apt install npm && npm install
-      - name: setup github access
-        run: |
-          git config user.email github-actions.github.com
-          git config user.name github-actions
-      - name: Gh_pages Deploy
-        run: npm run deploy
+      # Need to check permissions for gh-pages deployment within action
+      # - name: Install Dependencies
+      #   run: sudo apt update && sudo apt install npm && npm install
+      # - name: Gh_pages Deploy
+      #   run: npm run deploy
 
