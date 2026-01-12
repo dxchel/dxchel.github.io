@@ -9,6 +9,7 @@ import { Contact } from './components/Contact';
 import { API } from './components/API';
 import { Route, BrowserRouter as Router, Routes } from "react-router";
 import { CookiesProvider } from 'react-cookie';
+import { CookieConsent } from "react-cookie-consent";
 
 // Background from https://www.wallpaperbat.com/
 // Project Images from https://www.pngwing.com/
@@ -24,6 +25,7 @@ const root = (): React.ReactElement => {
             <Skills />
             <Projects />
             <Contact />
+            <CookieConsent>This site uses cookies, this is only for checking returning users.</CookieConsent>
         </div>
     )
 }
