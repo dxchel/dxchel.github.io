@@ -10,9 +10,6 @@ jobs:
   build:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    env:
-      MY_EMAIL: davidxchelmh@gmail.com
-      MY_NAME: dxchel
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -24,9 +21,8 @@ jobs:
         run: sudo apt update && sudo apt install npm && npm install
       - name: setup github access
         run: |
-          git config --global user.email $MY_EMAIL
-          git config --global user.name $MY_NAME
-          git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/dxchel/portfolio.git
-      - name: GH_pages Deploy
+          git config user.email github-actions.github.com
+          git config user.name github-actions
+      - name: Gh_pages Deploy
         run: npm run deploy
 
