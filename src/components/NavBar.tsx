@@ -44,7 +44,7 @@ export const NavBar = (): React.ReactElement => {
                         <Nav.Link href="#connect">
                             <button className="nav-connect"><span>Let's connect!</span></button>
                         </Nav.Link>
-                        <a href='../assets/David_Xchel_Morales_Hurtado-CV.pdf' download><button className="nav-resume"><span>Resume</span></button></a>
+                        <a href='assets/David_Xchel_Morales_Hurtado-CV.pdf' download><button className="nav-resume"><span>Resume</span></button></a>
                     </span>
                 </Navbar.Collapse>
             </Container>
