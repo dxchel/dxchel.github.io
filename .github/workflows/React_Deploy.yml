@@ -21,6 +21,8 @@ jobs:
         run: sudo apt update && sudo apt install npm && npm install
       - name: Build react
         run: npm run build
+      - name: Add assets to build
+        run: mkdir build/assets && cp src/assets/David_Xchel_Morales_Hurtado-CV.pdf build/assets
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
@@ -36,8 +38,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Get gh-pages branch
-        run: ls
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
