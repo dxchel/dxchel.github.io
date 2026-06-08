@@ -30,11 +30,11 @@ export const Skills = (): React.ReactElement => {
         },
         {
             skill: "C/C++ Coding",
-            percent: 60,
+            percent: 80,
         },
         {
             skill: "Bash scripting",
-            percent: 50,
+            percent: 60,
         },
         {
             skill: "Typescript",
@@ -52,26 +52,38 @@ export const Skills = (): React.ReactElement => {
     const tSkills: { skill: string, percent: number }[] = [
         {
             skill: "Linux OS and FS",
-            percent: 70,
+            percent: 80,
         },
         {
             skill: "Git/GitHub",
-            percent: 60,
+            percent: 70,
         },
         {
             skill: "Agile",
-            percent: 50,
+            percent: 60,
         },
         {
             skill: "Testing",
-            percent: 50,
+            percent: 60,
         },
         {
             skill: "Debugging",
-            percent: 50,
+            percent: 60,
         },
         {
             skill: "Docker",
+            percent: 60,
+        },
+        {
+            skill: "CI/CD",
+            percent: 50,
+        },
+        {
+            skill: "AI",
+            percent: 50,
+        },
+        {
+            skill: "Cloud",
             percent: 50,
         },
         {
@@ -81,18 +93,6 @@ export const Skills = (): React.ReactElement => {
         {
             skill: "Embedded systems",
             percent: 40,
-        },
-        {
-            skill: "CI/CD",
-            percent: 40,
-        },
-        {
-            skill: "AI",
-            percent: 40,
-        },
-        {
-            skill: "Cloud",
-            percent: 30,
         },
         {
             skill: "Jenkins",
