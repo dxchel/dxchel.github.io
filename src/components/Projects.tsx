@@ -24,6 +24,7 @@ import planImg from "../assets/img/plan.png";
 import portingImg from "../assets/img/porting.png";
 import processImg from "../assets/img/process.png";
 import pythonImg from "../assets/img/python.png";
+import gitImg from "../assets/img/git.png";
 import { ProjectCard } from './ProjectCard';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -163,6 +164,11 @@ export const Projects = (): React.ReactElement => {
             title: "Personal Linux system",
             description: "Configured my personal ArchLinux OS learning a lot about the tools and FS present in Linux.",
             imgUrl: linuxImg,
+        },
+        {
+            title: "Open Source Contributions",
+            description: "I have contributed to great OS projects like UnifyAI, Godot, FMT and CXXGraph",
+            imgUrl: gitImg,
         },
     ]
 
