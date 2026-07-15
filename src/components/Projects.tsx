@@ -167,7 +167,7 @@ export const Projects = (): React.ReactElement => {
         },
         {
             title: "Open Source Contributions",
-            description: "I have contributed to great OS projects like UnifyAI, Godot, FMT and CXXGraph",
+            description: "I have contributed to great OS projects like Blender, Godot, FMT, CXXGraph and UnifyAI",
             imgUrl: gitImg,
         },
     ]
