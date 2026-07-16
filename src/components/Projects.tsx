@@ -25,6 +25,7 @@ import portingImg from "../assets/img/porting.png";
 import processImg from "../assets/img/process.png";
 import pythonImg from "../assets/img/python.png";
 import gitImg from "../assets/img/git.png";
+import agentImg from "../assets/img/agent.png";
 import { ProjectCard } from './ProjectCard';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -167,8 +168,13 @@ export const Projects = (): React.ReactElement => {
         },
         {
             title: "Open Source Contributions",
-            description: "I have contributed to great OS projects like Blender, Godot, FMT, CXXGraph and UnifyAI",
+            description: "I have contributed to great OS projects like Blender, Godot, FMT, CXXGraph and UnifyAI.",
             imgUrl: gitImg,
+        },
+        {
+            title: "Personal AI Agent",
+            description: "Personal agent in my daily driver used for the automatization of repetitive work, research, data organizatio among other tasks.",
+            imgUrl: agentImg,
         },
     ]
 
