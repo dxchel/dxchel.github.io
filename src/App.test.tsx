@@ -63,7 +63,7 @@ test('Check Projects', () => {
   expect(personal).toAppearAfter(projects);
   const work: HTMLElement = screen.getByText("Work");
   expect(work).toAppearAfter(personal);
-  const university: HTMLElement = screen.getByText("University");
+  const university: HTMLElement = screen.getByText("College");
   expect(university).toAppearAfter(work);
   const multiapp: HTMLElement = screen.getByText("MultiApp");
   expect(multiapp).toAppearAfter(university);
