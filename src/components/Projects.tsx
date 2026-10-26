@@ -26,6 +26,7 @@ import processImg from "../assets/img/process.png";
 import pythonImg from "../assets/img/python.png";
 import gitImg from "../assets/img/git.png";
 import agentImg from "../assets/img/agent.png";
+import caffeineImg from "../assets/img/caffeine.svg";
 import { ProjectCard } from './ProjectCard';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -143,6 +144,12 @@ export const Projects = (): React.ReactElement => {
             description: "Base C++ GUI Application using Gtkmm4 and webkit, current project, it will contain several self contained Gtk apps, currently has a browser with navigation controls.",
             imgUrl: multiImg,
             url: "https://www.github.com/dxchel/MultiApp",
+        },
+        {
+            title: "Caffeine",
+            description: "Plasmoid made for for inhibiting sleep in Plasma 6 system.",
+            imgUrl: caffeineImg,
+            url: "https://www.github.com/dxchel/Caffeine",
         },
         {
             title: "Portfolio",
